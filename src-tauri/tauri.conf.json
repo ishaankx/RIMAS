@@ -1,0 +1,83 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/schema.json",
+  "build": {
+    "beforeBuildCommand": "yarn build",
+    "beforeDevCommand": "yarn cross-env BROWSER=none yarn start",
+    "devPath": "http://localhost:3000",
+    "distDir": "../build"
+  },
+  "package": {
+    "productName": "RIMAS",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "window": {
+       "all": true
+    },
+    "app": {
+      "all": true
+    }
+  },
+    "bundle": {
+      "active": true,
+      "category": "DeveloperTool",
+      "copyright": "",
+      "deb": {
+        "depends": []
+      },
+      "externalBin": [],
+      "icon": [
+        "icons/iconGen32x32.png", 
+        "icons/iconGen128x128.png",
+        "icons/iconGen256x256.png",
+        "icons/iconGen512x512.png",
+        "icons/iconGen256x256.ico"
+      ],
+      "identifier": "com.ishaan.dev",
+      "longDescription": "",
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      },
+      "resources": [],
+      "shortDescription": "",
+      "targets": "all",
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": false
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "height": 600,
+        "resizable": true,
+        "title": "R.I.M.A.S",
+        "width": 800
+      },
+      {
+        "label": "floating-icon",
+        "title": "Hover Icon",
+        "url": "../src/hover.html",
+        "transparent": true,
+        "decorations": false,
+        "alwaysOnTop": true,
+        "width": 50,
+        "height": 50,
+        "resizable": false,
+        "visible": false  
+      }
+    ]
+  }
+}

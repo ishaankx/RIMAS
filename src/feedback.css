@@ -1,0 +1,50 @@
+.feedback-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e3f8ff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-aligns all items inside */
+  width: 60%; /* Adjust width as needed */
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.feedback-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-aligns textarea and button */
+}
+
+.feedback-box textarea {
+  width: 100%; /* Makes textarea take full width of container */
+  height: 300px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.download-btn {
+  align-self: flex-start; /* Aligns the button to the left of the textarea */
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background-color: #45a049;
+}

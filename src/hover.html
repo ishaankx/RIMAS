@@ -1,0 +1,37 @@
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Dashboard from './dashboard';
+import Track from './track';
+import Feedback from './feedback';
+import axios from 'axios';
+
+import './App.css';
+
+
+const App = () => {
+  useEffect(() => {
+    // Function to start monitoring on app load
+    const startMonitoring = async () => {
+      try {
+        const response = await axios.post('http://127.0.0.1:8000/start_monitoring/');
+        console.log(response.data.status); // Expected output: Monitoring started
+      } catch (error) {
+        console.error("Error starting monitoring:", error);
+      }
+    };
+
+    startMonitoring();
+  }, []); // Empty dependency array ensures it runs once on mount
+
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/track" element={<Track />} />
+        <Route path="/feedback" element={<Feedback />} />
+      </Routes>
+    </Router>
+  );
+};
+
+export default App;

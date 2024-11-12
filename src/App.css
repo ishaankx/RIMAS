@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #D9FAFC;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,11 +28,39 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes App-logo-breathe {
+  0% {
+    opacity: 0.9;
+    transform: scale(1);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0.9;
+    transform: scale(1);
   }
 }
+
+.App-logo {
+  animation: App-logo-breathe 3s infinite ease-in-out;
+}
+
+/* Floating icon styles */
+.floating-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.8);
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+
