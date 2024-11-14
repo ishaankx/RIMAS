@@ -9,6 +9,7 @@ import './App.css';
 
 const App = () => {
   const [alertMessage, setAlertMessage] = useState("");
+  
 
   useEffect(() => {
     const startMonitoring = async () => {
@@ -68,4 +69,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default App; 
