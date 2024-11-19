@@ -2,6 +2,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './header.css'; // Add your styles
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const Header = ({ activeTab, setActiveTab }) => {
   const handleTabClick = (tabName) => {
@@ -37,7 +39,7 @@ const Header = ({ activeTab, setActiveTab }) => {
         </Link>
       </div>
       <div className="profile-icon">
-        <i className="fa fa-user-circle" style={{ fontSize: '24px' }}></i>
+        <i className="fas fa-user" style={{ fontSize: '24px' }}></i>
       </div>
     </div>
   );

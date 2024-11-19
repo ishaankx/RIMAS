@@ -48,14 +48,7 @@
     background-color: #ccc;
   }
   
-  .profile-icon {
-    position: absolute;
-    top: 15px;
-    right: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+ 
   
   .content {
     display: flex;

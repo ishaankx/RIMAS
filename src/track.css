@@ -1,10 +1,10 @@
 .track-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #e3f8ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e3f8ff;
 
 }
 
@@ -14,6 +14,14 @@
     align-items: center;
     margin-bottom: 20px;
 }
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 
 .dropdown-container {
   display: flex;
@@ -36,8 +44,15 @@
  
 }
 
+.dropdown-button.dropdown-selected {
+  background-color: #0056b3; /* Darker blue when active */
+  color: white;
+  border-radius: 5px; /* Reapply border-radius to avoid override issues */
+}
+
 .dropdown-button:hover {
   background-color: #0056b3;
+  border-radius: 5px;
 }
 
 .dropdown-content {
@@ -51,6 +66,7 @@
   margin-top: 10px;
   z-index: 1;
   border-radius: 5px;
+  justify-content: center;
 }
 
 .dropdown-item {
@@ -69,9 +85,53 @@
 .dropdown-active {
   background-color: #007bff;
   color: white;
+  border-radius: 5px;
 }
 
+.graph-container {
+  width: 80%;
+  max-height: 76%; /* Limit the max height */
+  height: auto;
+  text-align: center;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.graph-container canvas {
+  max-height: 100%; /* Ensure the chart doesn't exceed the container */
+
+}
+
+.graph-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.graph-container p {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #333;
+}
+
+.statistics {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
   
+}
+
+
+
+
+/* When graphData is available (graph is rendered) */
+.dropdown-container.dropdown-active {
+  height: auto; /* Adjust height dynamically */
+}
+
+
+
+
+
 
   
   /* Animation for dropdown visibility */

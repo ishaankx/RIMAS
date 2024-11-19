@@ -41,10 +41,11 @@
   
   .profile-icon {
     position: absolute;
-    top: 15px;
-    right: 30px;
+    top: 50px;
+    right: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: rgb(77, 80, 83);
   }
   
