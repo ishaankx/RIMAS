@@ -1,69 +1,57 @@
-# Getting Started with Create React App
+R.I.M.A.S. (Real-Time Intelligent Monitoring Advanced System)
+R.I.M.A.S. is a desktop application designed to enhance productivity and focus by leveraging cutting-edge technologies like computer vision and machine learning. It tracks user activity, detects distractions, and provides real-time feedback and voice-based interactions, making it ideal for individuals with attention challenges or those aiming to improve their work habits.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Real-Time Activity Monitoring: Uses YOLOv8 and OpenCV to detect user behavior such as phone usage and idle time.
+Voice Feedback: Provides productivity suggestions and reminders using speech recognition and TTS.
+Cross-Device Alerts: Sends notifications to mobile devices when the desktop is idle.
+Privacy Focused: All data is processed locally, ensuring user privacy.
+Requirements
+Software
+Operating System: Windows 11 or higher
+Python: 3.8 or higher
+Node.js: 16 or higher
+Frameworks & Libraries:
+PyTorch
+OpenCV
+YOLOv8
+Text-to-Speech (TTS) library
+SQLite
+Hardware
+Camera: A functional webcam
+Memory: Minimum 8GB RAM
+Processor: Intel i5 or higher
+Installation
+Step 1: Clone the Repository
+bash
+Copy code
+git clone https://github.com/ishaankx/RIMAS.git
+cd RIMAS
+Step 2: Install Dependencies
+bash
+Copy code
+# For backend (Python)
+pip install -r requirements.txt
 
-## Available Scripts
+# For frontend (Node.js and Tauri)
+npm install
+Step 3: Run the Application
+Backend (Python)
+bash
+Copy code
+python src/backend.py
+Frontend (Tauri)
+bash
+Copy code
+npm start
+Step 4: Access the Application
+Open http://localhost:3000 in your browser to interact with the R.I.M.A.S. interface.
 
-In the project directory, you can run:
+Contributing
+Feel free to submit issues or pull requests to enhance the functionality of R.I.M.A.S.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+License
+This project is licensed under the MIT License.
 
 ### `npm run build` fails to minify
 
